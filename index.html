@@ -5,49 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Nth HTML Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <h3>Cookies.io</h3>
-            <ul>
-                <li>About</li>
-                <li>Shop</li>
-                <li>Contact Us</li>
-                <li>Media</li>
-            </ul>
+            <div class="nav-left">
+                <h3>Cookies.io</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Shop</li>
+                    <li>Contact Us</li>
+                    <li>Media</li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li>Log in</li>
+                    <li>Sign up</li>
+                </ul>
+            </div>
         </nav>
-        <div>
-            <ul>
-                <li>Log in</li>
-                <li>Sign up</li>
-            </ul>
-        </div>
-        <section>
+        <section class="hero">
             <div>
                 <h2 class="hero-title">Cookies</h2>
                 <p class="hero-text">We have them fresh</p>
                 <button type="button" class="hero-button">Visit our shop</button>
             </div>
             <figure class="hero-figure">
-
+                <img src="https://images-gmi-pmc.edge-generalmills.com/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg" alt="cookies on a tray">
             </figure>
         </section>
     </header>
     <main>
         <h2>Cookie types</h2>
-        <hr>
+
         <div class="card-container">
-            <figure></figure>
-            <figcaption>Our cookies are fresh out of the oven!</figcaption>
-        </div>
-        <div class="card-container">
-            <figure></figure>
-            <figcaption>We use 100% gluten free wheat flour!</figcaption>
-        </div>
-        <div class="card-container">
-            <figure></figure>
-            <figcaption>We get our butter from free range cows!</figcaption>
+            <div class="card">
+                <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1280px-2ChocolateChipCookies.jpg" alt="Picture of cookies"></figure>
+                <figcaption>Our cookies are fresh out of the oven!</figcaption>
+            </div>
+            <div class="card">
+                <figure><img src="https://www.drschaer.com/sites/default/files/styles/facebook/public/2019-01/dsi-us-wheat-free-diet-teaser.jpg?itok=UDzOf9uH" alt="Picture of wheat"></figure>
+                <figcaption>We use 100% gluten free wheat flour!</figcaption>
+            </div>
+            <div class="card">
+                <figure><img src="https://a-z-animals.com/media/2021/11/calf-playful-in-a-row-together-oncoming-to-the-camera-in-a-green-a-picture-id1282528014.jpg" alt="Picture of cows"></figure>
+                <figcaption>We get our butter from free range cows!</figcaption>
+            </div>
         </div>
     </main>
     <article>
@@ -58,7 +63,7 @@
             <p>-Grandma who bakes cookies</p>
         </div>
     </article>
-    <section>
+    <section class="call">
         <div class="call-to-action">
             <div class="call-text">
                 <div class="call-title">Like our cookies?</div>
